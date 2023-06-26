@@ -18,16 +18,12 @@ namespace DataStructures.Exception_Assignment
                 Console.WriteLine("Enter your Age : ");
                 string input = Console.ReadLine();
 
-                // //
-                // //string correctformat = "^[0-9]+$";
-                // //if(!Regex.IsMatch(correctformat,input))
+                
                 if (input == "" || input == null)
                 {
                     throw new MyAgeException("You didn't entered corret information. Check Once.");
                 }
-                //
-                // Console.WriteLine("Now enter the input in Numbers");
-                // int age = Convert.ToInt32(Console.ReadLine());
+                
 
                 if (age >= 1 || age <= 14)
                 {
